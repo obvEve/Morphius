@@ -3,7 +3,7 @@
 namespace Morphius;
 
 /// <summary>
-/// Handles creating a new method based on the original, and its replacements using SL
+/// Handles creating a new method based on the original, and its replacements using IL
 /// </summary>
 internal class MethodBuilder
 {
