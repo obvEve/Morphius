@@ -6,7 +6,7 @@ namespace Morphius;
 /// <summary>
 /// Utilities for handling Detouring.
 /// </summary>
-public static class DetourUtils
+internal static class DetourUtils
 {
     /// <summary>
     /// Detours the method and replaces it with another.
@@ -15,8 +15,5 @@ public static class DetourUtils
     /// <param name="to"></param>
     public static void Detour(MethodInfo from, MethodInfo to)
     {
-        // Force JIT
-        RuntimeHelpers.PrepareMethod(from.MethodHandle);
-        RuntimeHelpers.PrepareMethod(to.MethodHandle);
     }
 }
